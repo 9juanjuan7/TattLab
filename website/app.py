@@ -1,4 +1,4 @@
-from website import create_app
+from . import create_app
 import atexit
 import os
 import glob
