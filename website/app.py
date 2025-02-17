@@ -2,7 +2,7 @@ from __init__ import create_app
 import atexit
 import os
 import glob
-app = create_app()
+
 # Function to delete all files in uploads folder when Flask stops
 def cleanup_uploads():
     files = glob.glob(os.path.join("website/uploads", "*"))  # Get all files in uploads/
@@ -15,4 +15,5 @@ def cleanup_uploads():
 atexit.register(cleanup_uploads)
 
 if __name__ == "__main__":
-  app.run(debug=True)
+    app = create_app()
+    app.run(debug=True)
