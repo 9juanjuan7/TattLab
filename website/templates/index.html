@@ -72,17 +72,25 @@
       crossorigin="anonymous"
     ></script>
 
-    <div class="fixed-top title-container" style="top:20px; left:50px; pointer-events: none;">
-      <div class="fs-custom" style="user-select: none;">TattLab</div>
-      <div class="visualizer-text">
-        1 - Upload your tattoo.<br>
-        2 - Double-click to place it.<br>
-        3 - Erase arm if needed.
-        <!-- <br> -->
-        <!-- 4 - Download your arm! -->
+    <!-- Title and Info Button Container -->
+    <div class="fixed-top" style="top:20px; left:50px;">
+      <!-- Non-interactive title and desktop instructions -->
+      <div class="title-container" style="pointer-events: none;">
+        <div class="fs-custom" style="user-select: none;">TattLab</div>
+        <div class="visualizer-text d-none d-sm-block" style="pointer-events: none;">
+          1 - Upload your tattoo.<br>
+          2 - Double-click to place it.<br>
+          3 - Erase arm if needed.
+        </div>
       </div>
-    
+      <!-- Mobile info icon (placed outside the non-interactive container) -->
+      <div class="d-block d-sm-none" style="margin-top: 10px; pointer-events: auto;">
+        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#infoModal" style="background-color: transparent; border: none;">
+          <i class="bi bi-info-circle-fill" style="color: black; font-size: 24px;"></i>
+        </button>
+      </div>
     </div>
+
     <div>{% block content %}{% endblock %}</div>
     <footer style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px; font-size: 16px; color: #555;">
       &copy; 2025 G. Carius, J. Pereira, J. Rea.
@@ -92,5 +100,22 @@
         <i class="bi bi-github" style="font-size: 16px; vertical-align: middle;"></i>
       </a>
     </footer>
+
+    <!-- Mobile Modal for Full Instructions -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">Instructions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>1 - Upload your tattoo.</p>
+            <p>2 - Double-click to place it.</p>
+            <p>3 - Erase arm if needed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
