@@ -72,23 +72,22 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Title and Info Button Container -->
-    <div class="fixed-top" style="top:20px; left:50px;">
-      <!-- Non-interactive title and desktop instructions -->
-      <div class="title-container" style="pointer-events: none;">
-        <div class="fs-custom" style="user-select: none;">TattLab</div>
-        <div class="visualizer-text d-none d-sm-block" style="pointer-events: none;">
-          1 - Upload your tattoo.<br>
-          2 - Double-click to place it.<br>
-          3 - Erase arm if needed.
-        </div>
+    <!-- Modified Title Container (unclickable) for Desktop -->
+    <div class="fixed-top title-container" style="top:20px; left:50px; pointer-events: none;">
+      <div class="fs-custom" style="user-select: none;">TattLab</div>
+      <!-- Desktop instructions: visible on screens sm and above -->
+      <div class="visualizer-text d-none d-sm-block">
+        1 - Upload your tattoo.<br>
+        2 - Double-click to place it.<br>
+        3 - Erase arm if needed.
       </div>
-      <!-- Mobile info icon (placed outside the non-interactive container) -->
-      <div class="d-block d-sm-none" style="margin-top: 10px; pointer-events: auto;">
-        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#infoModal" style="background-color: transparent; border: none;">
-          <i class="bi bi-info-circle-fill" style="color: black; font-size: 24px;"></i>
-        </button>
-      </div>
+    </div>
+
+    <!-- Mobile Info Button (clickable) moved to the right -->
+    <div class="fixed-top d-block d-sm-none" style="top:20px; left:300px; pointer-events: auto;">
+      <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#infoModal" style="background: transparent; border: none;">
+        <i class="bi bi-info-circle-fill" style="color: black; font-size: 24px;"></i>
+      </button>
     </div>
 
     <div>{% block content %}{% endblock %}</div>
