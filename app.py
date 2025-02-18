@@ -1,8 +1,3 @@
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(1024, 768))
-display.start()
-
-
 from website import create_app
 import atexit
 import os
