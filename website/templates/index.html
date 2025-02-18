@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}" />
+    <meta property="og:title" content="TattLab | Tattoo Visualizer" />
+    <meta property="og:description" content="Visualize tattoos in 3D on a realistic arm model." />
+    <meta property="og:image" content="https://tattlab.up.railway.app/static/dynamicpic.png" />
+    <meta property="og:url" content="https://tattlab.up.railway.app/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <style>
       html, body {
         margin: 0;
@@ -30,7 +38,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>{% block title %}{% endblock%}</title>
+    <title>
+      TattLab | Visualizer
+    </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
