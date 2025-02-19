@@ -5,7 +5,7 @@
 - Upload and position tattoo designs in real-time
 - User-friendly interface for easy experimentation
 
-## Tech Stack
+## 🛠️ Tech Stack
 Front-end: Bootstrap, HTML, CSS, JavaScript
 3D Rendering: Three.js
 Back-end: Flask
