@@ -18,7 +18,7 @@ We developed the web application using Three.js to render a 3D model of a human 
 - Seamless integration of image uploads and interactive positioning
 - Overcoming technical challenges in 3D rendering for realistic tattoo representation
 
-## ✅ Future Plans
+## 🔮 Future Plans
 1. Add more customization features:
 - Different arm models
 - Various skin tones
@@ -31,7 +31,7 @@ To run this web app, one must download the following dependencies:
 pip install flask    
 pip install pyautogui  
 ```
-## Run
+## ✅ Run
 The command to run the app locally is either one of the following from the root of the folder:    
 ```
 make run    
