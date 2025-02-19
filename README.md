@@ -6,9 +6,9 @@
 - User-friendly interface for easy experimentation
 
 ## 🤖 Tech Stack
-- Front-end: Bootstrap, HTML, CSS, JavaScript
-- 3D Rendering: Three.js
-- Back-end: Flask
+- **Front-end**: Bootstrap, HTML, CSS, JavaScript
+- **3D Rendering**: Three.js
+- **Back-end**: Flask
 
 ## 🛠️ Development Process
 We developed the web application using Three.js to render a 3D model of a human arm. The front-end was built with HTML, CSS, and JavaScript, ensuring a smooth and interactive experience. The back-end, powered by Flask, handles rendering of the page and overall backbone of the project allowing for our team to develop the project while testing.
