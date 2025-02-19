@@ -26,10 +26,9 @@ We developed the web application using Three.js to render a 3D model of a human 
 2. Implement a save-and-share feature for design feedback
   
 ## 🔧 Dependencies
-To run this web app, one must download the following dependencies:    
+To run this web app, download the following dependencies:    
 ```
-pip install flask    
-pip install pyautogui  
+pip install flask     
 ```
 ## ✅ Run
 The command to run the app locally is either one of the following from the root of the folder:    
