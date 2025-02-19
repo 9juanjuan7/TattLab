@@ -25,7 +25,7 @@ We developed the web application using Three.js to render a 3D model of a human 
 - Preview tattoos under different lighting conditions
 2. Implement a save-and-share feature for design feedback
   
-## 🤖 Dependencies
+## 🔧 Dependencies
 To run this web app, one must download the following dependencies:    
 ```
 pip install flask    
