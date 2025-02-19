@@ -1,24 +1,24 @@
 # TattLab
 
-##Key Features
+## Key Features
 - Interactive 3D arm model for tattoo visualization
 - Upload and position tattoo designs in real-time
 - User-friendly interface for easy experimentation
 
-##Tech Stack
+## Tech Stack
 Front-end: Bootstrap, HTML, CSS, JavaScript
 3D Rendering: Three.js
 Back-end: Flask
 
-##Development Process
+## Development Process
 We developed the web application using Three.js to render a 3D model of a human arm. The front-end was built with HTML, CSS, and JavaScript, ensuring a smooth and interactive experience. The back-end, powered by Flask, handles rendering of the page and overall backbone of the project allowing for our team to develop the project while testing.
 
-##Accomplishments
+## Accomplishments
 - Successful implementation of a real-time 3D tattoo visualization interface
 - Seamless integration of image uploads and interactive positioning
 - Overcoming technical challenges in 3D rendering for realistic tattoo representation
 
-##Future Plans
+## Future Plans
 1. Add more customization features:
 - Different arm models
 - Various skin tones
